@@ -9,7 +9,7 @@ import javax.swing.SwingUtilities;
 
 import net.miginfocom.swing.MigLayout;
 
-public class MLayout {
+public class MigLayoutTutorial {
 	JFrame frame = new JFrame("Employees");
 	JPanel panel = new JPanel();
 
@@ -22,7 +22,7 @@ public class MLayout {
 	JLabel lblDsc = new JLabel("Description:");
 	JTextArea txaDsc = new JTextArea(10, 10);
 
-	public MLayout() {
+	public MigLayoutTutorial() {
 		panel.setLayout(new MigLayout());
 		panel.add(lblFirstName);
 		panel.add(txtFirstName, "wrap, pushx, growx");
@@ -43,7 +43,7 @@ public class MLayout {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new MLayout();
+				new MigLayoutTutorial();
 			}
 		});
 	}

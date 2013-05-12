@@ -1,6 +1,6 @@
 import javax.swing.*;
 
-public class TabbedPane extends JFrame{
+public class JTabbedPaneTutorial extends JFrame{
 
 	JPanel firstPanel = new JPanel();
 	JPanel secondPanel = new JPanel();
@@ -10,7 +10,7 @@ public class TabbedPane extends JFrame{
 	
 	JTabbedPane tabbedPane = new JTabbedPane();
 	
-	public TabbedPane(){
+	public JTabbedPaneTutorial(){
 		firstPanel.add(firstLabel);
 		secondPanel.add(secondLabel);
 		
@@ -27,7 +27,7 @@ public class TabbedPane extends JFrame{
 			e.printStackTrace();
 		}
 		
-		TabbedPane tp = new TabbedPane();
+		JTabbedPaneTutorial tp = new JTabbedPaneTutorial();
 		tp.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		tp.setSize(600,400);
 		tp.setVisible(true);

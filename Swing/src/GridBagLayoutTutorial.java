@@ -7,14 +7,14 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class GBagLayout {
+public class GridBagLayoutTutorial {
 	JFrame frame = new JFrame();
 	JPanel panel = new JPanel();
 	JButton btn1 = new JButton("One");
 	JButton btn2 = new JButton("Two");
 	JButton btn3 = new JButton("Three");
 
-	public GBagLayout() {
+	public GridBagLayoutTutorial() {
 		panel.setLayout(new GridBagLayout());
 		GridBagConstraints gbc = new GridBagConstraints();
 		gbc.fill = GridBagConstraints.HORIZONTAL;
@@ -43,7 +43,7 @@ public class GBagLayout {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new GBagLayout();
+				new GridBagLayoutTutorial();
 			}
 		});
 	}

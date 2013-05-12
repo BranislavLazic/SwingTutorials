@@ -5,7 +5,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class GrLayout {
+public class GridLayoutTutorial {
 	JFrame frame = new JFrame("GridLayout demo");
 	JPanel panel = new JPanel();
 	JButton btn1 = new JButton("First");
@@ -13,7 +13,7 @@ public class GrLayout {
 	JButton btn3 = new JButton("Third");
 	JButton btn4 = new JButton("Fourth");
 	
-	public GrLayout() {
+	public GridLayoutTutorial() {
 		panel.setLayout(new GridLayout(2,2,3,3));
 		panel.add(btn1);
 		panel.add(btn2);
@@ -33,7 +33,7 @@ public class GrLayout {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new GrLayout();
+				new GridLayoutTutorial();
 			}
 		});
 	}

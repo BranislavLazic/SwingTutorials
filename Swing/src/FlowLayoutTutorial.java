@@ -6,14 +6,14 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 
-public class FloLayout {
+public class FlowLayoutTutorial {
 	JFrame frame = new JFrame("FlowLayout demo");
 	JPanel panel = new JPanel();
 	JButton btn1 = new JButton("First");
 	JButton btn2 = new JButton("Second");
 	JButton btn3 = new JButton("Third");
 	
-	public FloLayout() {
+	public FlowLayoutTutorial() {
 		panel.setLayout(new FlowLayout(FlowLayout.RIGHT,3,3));
 		panel.add(btn1);
 		panel.add(btn2);
@@ -31,7 +31,7 @@ public class FloLayout {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new FloLayout();
+				new FlowLayoutTutorial();
 			}
 		});
 	}

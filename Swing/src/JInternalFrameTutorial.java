@@ -3,7 +3,7 @@ import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 import javax.swing.SwingUtilities;
 
-public class InternalFrame {
+public class JInternalFrameTutorial {
 
 	public static void main(String[] args) {
 		SwingUtilities.invokeLater(new Runnable() {
@@ -29,6 +29,7 @@ public class InternalFrame {
 				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 				frame.setSize(640, 480);
 				// frame.pack();
+
 				frame.setVisible(true);
 
 			}

@@ -5,10 +5,10 @@ import java.awt.event.MouseEvent;
 import javax.swing.JPanel;
 import javax.swing.JWindow;
 
-public class Window extends JWindow{
+public class JWindowTutorial extends JWindow{
 	JPanel panel = new JPanel();
 	
-	public Window(){
+	public JWindowTutorial(){
 		panel.setBackground(Color.BLUE);
 		add(panel);
 		addMouseListener(new MouseAdapter(){
@@ -21,7 +21,7 @@ public class Window extends JWindow{
 	}
 
 	public static void main(String[] args) {
-		Window w = new Window();
+		JWindowTutorial w = new JWindowTutorial();
 		w.setSize(640,480);
 		w.setVisible(true);
 	}

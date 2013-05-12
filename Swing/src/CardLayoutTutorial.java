@@ -8,7 +8,7 @@ import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
-public class CLayout {
+public class CardLayoutTutorial {
 	JFrame frame = new JFrame("CardLayout demo");
 	JPanel panelCont = new JPanel();
 	JPanel panelFirst = new JPanel();
@@ -17,7 +17,7 @@ public class CLayout {
 	JButton buttonSecond = new JButton("Switch to first panel/workspace");
 	CardLayout cl = new CardLayout();
 
-	public CLayout() {
+	public CardLayoutTutorial() {
 		panelCont.setLayout(cl);
 
 		panelFirst.add(buttonOne);
@@ -54,7 +54,7 @@ public class CLayout {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new CLayout();
+				new CardLayoutTutorial();
 			}
 		});
 	}

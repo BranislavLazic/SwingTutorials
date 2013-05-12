@@ -3,7 +3,7 @@ import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
-public class BorLayout {
+public class BorderLayoutTutorial {
 
 	JFrame frame = new JFrame("BorderLayout demo");
 	JButton btn1 = new JButton("NORTH");
@@ -12,7 +12,7 @@ public class BorLayout {
 	JButton btn4 = new JButton("WEST");
 	JButton btn5 = new JButton("EAST");
 
-	public BorLayout() {
+	public BorderLayoutTutorial() {
 		frame.setLayout(new BorderLayout());
 		frame.add(btn1, BorderLayout.NORTH);
 		frame.add(btn2, BorderLayout.SOUTH);
@@ -29,7 +29,7 @@ public class BorLayout {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new BorLayout();
+				new BorderLayoutTutorial();
 			}
 		});
 	}

@@ -8,13 +8,13 @@ import javax.swing.JPanel;
 import javax.swing.SwingUtilities;
 
 
-public class BxLayout {
+public class BoxLayoutTutorial {
 	JFrame frame = new JFrame("BoxLayout tutorial");
 	JPanel panel = new JPanel();
 	JButton buttonFirst = new JButton("First");
 	JButton buttonSecond = new JButton("Second");
 	
-	public BxLayout() {
+	public BoxLayoutTutorial() {
 		panel.setLayout(new BoxLayout(panel,BoxLayout.LINE_AXIS));
 		panel.add(buttonFirst);
 		panel.add(Box.createHorizontalGlue());
@@ -30,7 +30,7 @@ public class BxLayout {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new BxLayout();
+				new BoxLayoutTutorial();
 			}
 		});
 	}

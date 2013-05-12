@@ -8,13 +8,13 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.SwingUtilities;
 
-public class OptionPane {
+public class JOptionPaneTutorial {
 	JFrame frame = new JFrame("JOptionPane demo");
 	JPanel panel = new JPanel();
 	JButton button = new JButton("Call dialog");
 	JTextArea textarea = new JTextArea(10, 10);
 
-	public OptionPane() {
+	public JOptionPaneTutorial() {
 		button.addActionListener(new ActionListener() {
 			@Override
 			public void actionPerformed(ActionEvent arg0) {
@@ -48,7 +48,7 @@ public class OptionPane {
 		SwingUtilities.invokeLater(new Runnable() {
 			@Override
 			public void run() {
-				new OptionPane();
+				new JOptionPaneTutorial();
 			}
 		});
 	}

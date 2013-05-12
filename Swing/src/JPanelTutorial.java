@@ -1,5 +1,3 @@
-import java.awt.Color;
-import java.awt.Graphics;
 import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
@@ -7,10 +5,10 @@ import java.io.IOException;
 import javax.imageio.ImageIO;
 import javax.swing.JPanel;
 
-public class Panel extends JPanel{
+public class JPanelTutorial extends JPanel{
 	BufferedImage image;
 	
-	public Panel(){
+	public JPanelTutorial(){
 		try {
 			image = ImageIO.read(new File("C:/Documents and Settings/All Users/Documents/My Pictures/Sample Pictures/Winter.jpg"));
 		} catch (IOException e) {
