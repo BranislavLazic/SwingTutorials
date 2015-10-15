@@ -11,11 +11,11 @@ public class JButtonTutorial {
 				JButton button = new JButton("Accept");
 				frame.add(button);
 				/*
-				 * By calling setIcon method you are setting icon on JButton by
+				 * By calling setIcon method you are setting com on JButton by
 				 * passing ImageIcon instance
 				 */
 				button.setIcon(new ImageIcon(getClass().getResource(
-						"com/icon/Accept.png")));
+                        "com/icon/Accept.png")));
 
 				frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 				frame.pack();

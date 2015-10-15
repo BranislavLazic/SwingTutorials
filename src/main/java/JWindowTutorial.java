@@ -1,9 +1,7 @@
-import java.awt.Color;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-
-import javax.swing.JPanel;
-import javax.swing.JWindow;
 
 public class JWindowTutorial extends JWindow{
 	JPanel panel = new JPanel();
