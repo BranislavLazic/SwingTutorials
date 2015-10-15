@@ -30,6 +30,7 @@ public class JPanelTutorial extends JPanel{
 	}
 	
 	public void paintComponent(Graphics g){
+		super.paintComponents(g);
 		g.drawImage(image, 0,0,null);
 		g.setColor(Color.RED);
 		g.fillRect(10, 10, 100, 50);
